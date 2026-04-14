@@ -44,8 +44,7 @@ If you use this code and data for your research or project, please cite:
     @inproceedings{sun2026spotsound,
         title={SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding},
         author={Sun, Luoyi and Zhou, Xiao and Li, Zeqian and Zhang, Ya and Wang, Yanking and Xie, Weidi},
-	    booktitle={NeurIPS},
-	    year={2025}
+	    year={2026}
 	}
 
 ## Acknowledgements
