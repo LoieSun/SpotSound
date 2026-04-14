@@ -22,18 +22,17 @@ pip install -r requirements.txt
 ## 🚀 Quick Start
 1. **Download Model Checkpoints**  
    - Obtain the pretrained checkpoints from [Audio Flamingo 3](https://huggingface.co/nvidia/audio-flamingo-3) and [SpotSound]((https://huggingface.co/Loie/SpotSound)).  
-   - Set `model_local_path` to your local path for Audio Flamingo 3, and `model_finetune_path` to your SpotSound checkpoint.
+   - Set `pretrain_model` to your local path for Audio Flamingo 3, and `checkpoint` to your SpotSound checkpoint.
 
 
 2. **Run Inference**  
-   - Execute the following command to perform inference. The output results will be saved in the `results/` directory.
+   - Execute the following command to perform audio temporal grounding inference. 
    ```bash
    export CUDA_VISIBLE_DEVICES=0 
-   python inference.py --model_local_path path_to_qwen2vl7B \
-        --model_finetune_path ckpt/unitime \
-        --audio_path data/test.json \
-        --output_dir ./results/test \
-        --nf_short 128
+   python inference.py --pretrain_model path_to_audioflamingo3 \
+        --checkpoint ckpt/spotsound \
+        --audio_path data/audio.wav \
+        --query dog barking
    ```
 
 
