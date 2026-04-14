@@ -4,7 +4,7 @@ This repository provides the official PyTorch implementation of **"SpotSound: En
 [🌐 Project Page]() $\cdot$ [📄 Paper]() $\cdot$ [🤗 Model](https://huggingface.co/Loie/SpotSound) $\cdot$ [🤗 Benchmark](https://huggingface.co/datasets/Loie/SpotSound-Bench)
  
 <div align="center">
-   <img src="./assets/teaser.png">
+   <img src="./assets/teaser.png" alt="Teaser" width="50%">
 </div>
 
 ## 🔥 News
