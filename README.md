@@ -1,7 +1,7 @@
 # SpotSound
 This repository provides the official PyTorch implementation of **"SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding"**.
 
-[🌐 Project Page]() $\cdot$ [📄 Paper]() $\cdot$ [🤗 Model](https://huggingface.co/Loie/SpotSound) $\cdot$ [🤗 Benchmark](https://huggingface.co/datasets/Loie/SpotSound-Bench)
+[🌐 Project Page](https://loiesun.github.io/spotsound/) $\cdot$ [📄 Paper](https://arxiv.org/abs/2604.13023) $\cdot$ [🤗 Model](https://huggingface.co/Loie/SpotSound) $\cdot$ [🤗 Benchmark](https://huggingface.co/datasets/Loie/SpotSound-Bench)
  
 <div align="center">
    <img src="./assets/teaser.png" alt="Teaser" width="50%">
