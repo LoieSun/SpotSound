@@ -8,6 +8,7 @@ This repository provides the official PyTorch implementation of **"SpotSound: En
 </div>
 
 ## 🔥 News
+- [2026.07] SpotSound accepted to ACM MM 2026!
 - [2026.04] Released the inference code.
 - [2026.04] Preprint available on arXiv.
 
