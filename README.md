@@ -36,14 +36,32 @@ pip install -r requirements.txt
         --query dog barking
    ```
 
+3. **Dataset Structure**  
+   - All samples are stored in a list, where each sample is a dictionary. 
+   <pre>
+   [{
+      "audio_path": "_Uro9suV3xU_130_187.wav",
+      "caption": "hair dryer drying",
+      "answer": [[8.1, 10.9]]
+   },...]
+   </pre>
 
+4. **Train**  
+   - Execute the following command to perform audio temporal grounding model training. 
+   ```bash
+   export CUDA_VISIBLE_DEVICES=0 
+   python train.py --pretrain_model path_to_audioflamingo3 \
+        --output_dir path_to_save \
+        --train_data path_to_train_data_json_file \
+        --val_data path_to_valid_data_json_file 
+   ```      
 
 ## Citation
 If you use this code and data for your research or project, please cite:
 
     @inproceedings{sun2026spotsound,
         title={SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding},
-        author={Sun, Luoyi and Zhou, Xiao and Li, Zeqian and Zhang, Ya and Wang, Yanking and Xie, Weidi},
+        author={Sun, Luoyi and Zhou, Xiao and Li, Zeqian and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
 		journal={arXiv preprint arXiv:2604.13023},
 	    year={2026}
 	}
