@@ -59,11 +59,11 @@ pip install -r requirements.txt
 ## Citation
 If you use this code and data for your research or project, please cite:
 
-    @inproceedings{sun2026spotsound,
-        title={SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding},
-        author={Sun, Luoyi and Zhou, Xiao and Li, Zeqian and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
-		journal={arXiv preprint arXiv:2604.13023},
-	    year={2026}
+	@article{sun2026spotsound,
+	  title={SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding},
+	  author={Sun, Luoyi and Zhou, Xiao and Li, Zeqian and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
+	  journal={arXiv preprint arXiv:2604.13023},
+	  year={2026}
 	}
 
 ## Acknowledgements
