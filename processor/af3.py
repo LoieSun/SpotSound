@@ -117,5 +117,25 @@ class AudioFlamingo3TemporalProcessor(AudioFlamingo3Processor):
         text_inputs = self.tokenizer(text, **text_kwargs)
         data = {**text_inputs, **audio_inputs}
 
+        if output_labels:
+            input_ids = data['input_ids']
+            labels = torch.full_like(input_ids, -100)
+            input_ids_flat = input_ids[0].tolist()
+            L = len(input_ids_flat)
+            pos = 0
+            while pos < L:
+                if input_ids_flat[pos] == 77091:
+                    ans_start = pos + 2 # <|im_start|>assistant\n***<|im_end|>\n，直接从***的第一个开始
+                    ans_end = ans_start
+                    while ans_end < L and input_ids_flat[ans_end] != 151645:
+                        ans_end += 1
+                    if ans_end < L:
+                        labels[0, ans_start : ans_end + 2] = input_ids[
+                            0, ans_start : ans_end + 2
+                        ]
+                        pos = ans_end
+                pos += 1
+            data['labels'] = labels
+
 
         return BatchFeature(data=data, tensor_type=return_tensors)
